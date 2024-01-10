@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>8-5.姓名案例_watch實現</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <!-- 
+        computed 和 watch 之間的區別：
+            1.computed能完成的功能，watch都可以完成
+            2.watch能完成的功能，computed不一定能完成，例如：watch可以進行異步操作
+        兩個重要的小原則：
+            1.所被Vue管理的函數，最好寫成普通函數，這樣this的指向才是vm或組件實例對象
+            2.所有不被Vue所管理的函數(定時器的回調函數，ajax的回調函數等)，最好寫成箭頭函數，這樣this的指向才是vm或組件實例對象
+    -->
+    <!-- 準備好一個容器 -->
+    <div id="root">
+        姓：<input type="text" v-model="firstName"><br><br>
+        名：<input type="text" v-model="lastName"><br><br>
+        全名：<span>{{fullName}}</span>
+    </div>
+</body>
+
+<script type="text/javascript">
+    Vue.config.productionTip = false  //把警告關掉，阻止 vue 在啟動時生成生產提示。
+    const vm = new Vue({
+        el: '#root',
+        data: {
+            firstName: '張',
+            lastName: '三',
+            fullName: '張-三',
+        },
+        watch:{
+            firstName(val){
+                setTimeout(() => {
+                    this.fullName = val + '-' + this.lastName
+                }, 1000);
+            },
+            lastName(val){
+                this.fullName = this.firstName + '-' + val
+            }
+        }
+    })
+</script>
+
+</html>

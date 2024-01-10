@@ -1,0 +1,85 @@
+{
+	// Place your Vue 工作區 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Vue尚硅谷模板": {
+		"prefix": "vue2.0尚硅谷模板",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"",
+			"<head>",
+			"    <meta charset=\"UTF-8\">",
+			"    <title>Document</title>",
+			"    <!-- 引入Vue -->",
+			"    <script type=\"text/javascript\" src=\"../js/vue.js\"></script>",
+			"</head>",
+			"<body>",
+			"    <!-- 準備好一個容器 -->",
+			"    <div id=\"root\">",
+			"",
+			"    </div>",
+			"</body>",
+			"",
+			"<script type=\"text/javascript\">",
+		  	"    Vue.config.productionTip = false  //把警告關掉，阻止 vue 在啟動時生成生產提示。",
+			"",
+			"</script>",
+			"",
+			"</html>"
+		],
+		"description": "Vue2.0 尚硅谷模板"
+	}
+
+
+"尚硅谷-new Vue": {
+	"prefix": "v1",
+	"body": [
+	"new Vue({",
+	"	el: '#root',",
+	"	data: {",
+	"		$1",
+	"	}",
+	"})"
+	],
+	"description": "創建 vue 實例"
+}
+
+
+"尚硅谷-scr(呼叫script)": {
+	"prefix": "scr",
+	"body": [
+		"<script type=\"text/javascript\">",
+		"	$1",
+		"</script>"
+	],
+	"description": "尚硅谷-scr(呼叫script)"
+}
+
+"尚硅谷-methods": {
+	"prefix": "met",
+	"body": [
+		"methods:{",
+		"    $1",
+		"},"
+	],
+	"description": "尚硅谷-methods"
+}
+
+
+"尚硅谷-console.log": {
+	"prefix": "csl",
+	"body": [
+		"console.log($1)"
+	],
+	"description": "尚硅谷-console.log"
+}
+
+
+
+
+}
