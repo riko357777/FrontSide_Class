@@ -1,0 +1,98 @@
+/* 標籤選擇器*/
+/* 擬態選擇器 a:hover a:active*/
+/* 類別選擇器 自訂效果*/
+
+h1 a {
+    color: blue;
+    font-size: 60px;
+}
+
+h1 a:hover {
+    color: #20e066;
+    font-size: 80px;
+}
+
+h1 a:active {
+    color: red;
+}
+
+p1 {
+    color: blueviolet;
+    font-size: 30px;
+}
+
+p1:hover {
+    color: #20e066;
+}
+
+.style1 {
+    color: violet;
+}
+
+.style2 {
+    color: cornflowerblue;
+}
+
+.標籤一 {
+    color: blueviolet;
+}
+
+.標籤一:hover {
+    color: darkblue;
+}
+
+.標籤一:active {
+    color: coral;
+}
+
+.標籤二 {
+    color: red;
+}
+
+.標籤三 {
+    color: yellowgreen;
+}
+
+.標籤五 {
+    color: black;
+}
+
+.標籤五:hover {
+    color: darkgreen;
+}
+
+.優化文字排版教學 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family是調整字體*/
+    font-size: 16px;
+    line-height: 1.5;
+    /*行距 大小幾px乘以行距幾倍=一行有多大*/
+    /*例如:18pxx1.5=27px;*/
+    /*或是也可以直接寫要幾px*/
+    text-align: left;
+    /*設定文字靠左靠右 預設是靠左*/
+    text-indent: 32px;
+    /*段落首段縮排 一個字16px所以兩個字32px*/
+    letter-spacing: 1px;
+    /* 調整文字間距 */
+    text-decoration: underline;
+    /*下底線*/
+    /*line-through是畫中線(槓掉的意思)*/
+
+}
+
+.線條教學{
+    font-size: 30px;
+    border-top: 2px solid blue;
+    border-bottom: 2px dashed greenyellow;
+    border-left: 2px dotted plum;
+    line-height: 2;
+    /* 線條粗細 線條樣式 線條顏色 */
+    /* 實心線條 = solid */
+    /* 虛線線條 = dashed */
+    /* 原點虛線線條 = dotted */
+}
+.貓咪{
+    border-top: 2px solid blue;
+    border-bottom: 2px dotted pink;
+}

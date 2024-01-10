@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四單元學習</title>
+    <link rel="stylesheet" href="第四單元容器.css">
+</head>
+<body>
+    hello
+    <h1>標題</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit officia sint reiciendis dolorum ipsum delectus. Voluptas facilis animi, saepe ducimus sequi quasi iusto, hic tempore sit necessitatibus reiciendis et.</p>
+    <h1 class="區塊元素">區塊元素</h1>
+    <h1 class="區塊元素">區塊元素</h1>
+    <!-- 區塊元素會盡可能佔滿整個版面  -->
+    <!-- 並且會另起一行來呈現 -->
+    <ul>
+        <li>我是li標籤</li>
+        <li>我也是li標籤</li>
+        <!-- li標籤是區塊元素 -->
+    </ul>
+    <a href="#">我是A標籤</a>
+    <a href="#">我是A標籤</a>
+    <br> <br>
+    <p class="行內元素"><span class="today">今天</span>天氣很好，我看了這個<a href="#">連結</a>獲得了很多的知識</p>
+    <!-- a標籤是行內元素     -->
+    <!-- 行內元素1.比較常用在段落裡面 2.沒辦法設定寬高 -->
+    <!-- 語意span本身不代表任何意思，只是點綴樣式用，可當成排版用的行內標籤 -->
+    
+    <!-- 4-5 區塊與行內 -->
+    <h1>大標題</h1>
+    <h2>副<span class="red">標題</span></h2>
+    <a href="http://google.com.tw" class="google標籤" target="_blank">我要連結到<span class="google">Google</span></a>
+    <br><br><br>
+
+    <!-- 4-6 div + 後代選擇器教學 -->
+    <!-- div會稱作 沒有語意，單純拿來排版的標籤 -->
+    <div class="style1">
+        <a href="#">red</a>
+        <a href="#">red</a>
+        <a href="#">red</a>  
+        <p>這是段落</p>
+        <p class="content1">這是段落</p>
+    </div>
+
+    <div class="style2">
+        <h2>我是標題</h2>
+        <a href="#">blue</a>
+        <a href="#">blue</a>
+        <a href="#">blue</a>  
+    </div>
+    <br><br><br>
+
+    <!-- 4-7 margin產生外邊界距離 -->
+    <!-- 4-8 padding 產生留白距離 -->
+    <div class="box">
+        <h1>沒看過LeBron這樣打球！勇士Green：他不再主導進攻，實在有點怪</h1>
+        <p>湖人首戰以5分之差力克勇士，討回系列賽主場優勢，指標球星詹姆士(LeBron James)全場投24僅中9，看似不太理想，但勇士隊格林(Draymond Green)卻在節目上特別提到詹姆士讓他出乎意料的轉變。</p>
+        <p>從出手次數來看，詹姆士在第一戰出手24次依舊高居全隊之冠，但最大的不同在於他的進攻方式，根據進階數據，詹姆士首戰有11次在沒有運球的情況下出手投籃，有13次是在持球2秒以內就出手，意味著他多半是在接獲傳球後不久就直接投籃。</p>
+        <p>這些數據也呈現出湖人隊的進攻不再集中由詹姆士發動，包括羅素(D’Angelo Russell)和瑞佛斯(Austin Reaves)都在首戰展現不錯的滲透力，讓詹姆士轉而成為埋伏接球的角色，相當程度地減輕他在進攻端的壓力，也代表他能更有餘裕地投入防守。</p>
+    </div>
+    <br><br><br>
+
+    <!-- 4-10 .Box Model(盒模型)!!很重要!!-->
+    <div class="boxx"></div>
+    <div class="boxx"></div>
+    <div class="boxxx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita ullam earum architecto nulla maxime, hic ratione cumque mollitia natus!</div>
+    <div class="boxxx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusamus!</div>
+    <br><br><br>
+
+    <!-- 4-11 .margin 0 auto 區塊水平置中 -->
+    <div class="wrap">
+        <div class="header"></div>
+    </div>
+    <br>
+    <div class="wrapp">
+        <div class="headerr"></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor!</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <br><br><br>
+
+
+    
+    <!-- 4-12 .text-align 文字水平調整 -->
+    <div class="wrapp">
+        <div class="headerr"></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor!</p>
+        </div>
+        <div class="apple">
+            <p>地址:高雄市前鎮區33號</p>
+            <p>tel:02-2249-6956</p>
+
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- 不想算盒模型的推擠 box-sizing -->
+    <div class="boxbox"></div>
+    <div class="boxbox2"></div>
+</body>
+</html>

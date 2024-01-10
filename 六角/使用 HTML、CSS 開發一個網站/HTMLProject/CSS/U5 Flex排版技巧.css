@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 5-3+5-4 */
+.container {
+    display: flex;
+    /* display要加在父層 他才可以控制裡面的box具有效果 */
+    /* flex的特性會讓裡面的div全部都會一起自適應伸縮 預設都會是相同的大小 */
+    background: #004466;
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    width: 100px;
+    background: #00ffa2;
+    color: #004466;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item1 {
+    width: 150px;
+    height: 150px;
+}
+
+.item2 {
+    height: 200px;
+}
+
+.item3 {
+    width: 400px;
+}
+
+
+/* 5-7 */
+.container1 {
+    height: 400px;
+    width: 500px;
+    background: #004466;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* 預設是row 可寫可不寫 */
+    justify-content: space-around;
+    /* 從左邊(主軸線的起點)開始對齊 */
+    /* justify-content: center; 置中對齊 */
+    /* justify-content: flex-end; 靠右(主軸線的終點)對齊 */
+    /* justify-content: space-around; 全部均分 */
+    /* justify-content: space-between; 兩邊貼齊容器中間做均分 */
+}
+
+.itemm {
+    width: 100px;
+    background: #00ffa2;
+    color: #004466;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* 5-8 */
+.menu {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu li {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.menu li a {
+    display: block;
+    /* 把a標籤變成區塊元素 */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* 移除下底線 */
+    color: #004466;
+    background: #00ffa2;
+}
+
+.menu li a:hover {
+    color: #00ffa2;
+
+    background-color: #004466;
+
+}
+
+
+/* 5-9 */
+.menu1 {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 換行的意思 但會有一行跑到下面是因為border也算在大小裡面，所以要把border刪掉600px才會剛好能夠6格 */
+    /* 預設是叫 flex-wrap: no-wrap; 不換行的意思*/
+}
+
+.menu1 li {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+}
+
+.menu1 li a {
+    display: block;
+    /* 把a標籤變成區塊元素 */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* 移除下底線 */
+    color: #00ffa2;
+    background: blueviolet;
+}
+
+.menu1 li a:hover {
+    color: blueviolet;
+    background: #00ffa2;
+
+}

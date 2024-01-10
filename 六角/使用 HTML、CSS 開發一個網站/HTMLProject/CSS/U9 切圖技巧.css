@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/* ? 9-4 background在html元素上載入背景圖片，設定寬高 */
+/* ? 9-5 background-repeat 將圖片重複顯示 */
+/* ? 9-6 background-color 與背景圖片的混用 */
+.box{
+    width: 1080px;
+    background-image: url(../img/U9/green.PNG);
+	background-repeat: repeat-x;
+    /* * 載入背景圖片 */
+    /* * 若長寬超過圖片大小 預設持續列印出來直到填滿*/
+	/* * 若圖案可以切小塊 使用語法讓它全部填滿 */
+	/* * background-repeat: no-repeat 不重複(只印出一塊) */
+	/* * background-repeat: repeat-x 針對x軸 做水平的repeat */
+	/* * background-repeat: repeat-y 針對y軸 做垂直的repeat */
+	background-color: #019671;
+	/* * background-color 是讓這個顏色填補到下面的語法 而不是一直重複印出來 */
+}
+.box h2{
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 20px;
+
+}
+
+
+/* ? 9-7 background-position 移動 background 的位置 */
+.logo{
+	width: 500px;
+	height: 500px;
+	background-image: url(../img/U5/logo.png);
+	background-repeat: no-repeat;
+	background-color: #019671;
+	background-position: right bottom;
+	/* * 第一個值是x軸 第二個y軸 預設是從左上開始 */
+	/* * 也可以用px 與 % 來控制位置 */
+}
+
+
+/* ? 9-8 background 縮寫教學 */
+.logo1{
+	width: 500px;
+	height: 500px;
+	background: url(../img/U5/logo.png) #019671 no-repeat right bottom;
+	/* * 順序都可以 不影響 */
+}
+
+
+/* ? 9-9 圖片取代文字技巧 */
+.header h1{
+	float: left;
+}
+.header h1 a{
+	background-image: url(../img/U5/logo.png);
+	width: 224px;
+	height: 50px;
+	display: block;
+	/* 因為a標籤是行內元素 因此要讓他變成區塊元素 */
+	text-indent: 101%;
+	/* * 首排縮行 */
+	overflow: hidden;
+	/* * 若超出div距離就隱藏起來 */
+	white-space:  nowrap;
+	/* * 不要斷行 */
+}
+
+
+/* ? U9 小節作業 */
+.headeru9{
+	width: 1100px;
+	margin: 0 auto;
+}
+.head{
+	height: 30px;
+	background-color: #f6f6f6;
+}
+.head ul{
+	float: right;
+}
+.head ul li{
+	float: left;
+	margin: 5px;
+}
+.head li a{
+	text-decoration: none;
+}
+.head li img{
+	margin-right: 5px;
+	float: left;
+}
+.head li span{
+	float: left;
+}
+.facebook{
+	border-right: 2px solid #cccccc;
+	padding-right: 8px;
+}
+
+.logou9 h1 a{
+	background-image: url(../img/U5/logo.png);
+	width: 224px;
+	height: 50px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space:  nowrap;
+	float: left;
+}
+.menu{
+	padding: 10px;
+	float: right;
+}
+.menu li{
+	float: left;
+}
+.menu li a{
+	text-decoration: none;
+	color:#08ce9c;
+	font-size:18px;
+	padding:10px;
+}
+.menu a:hover{
+	border-bottom:5px solid #08ce9c;
+}

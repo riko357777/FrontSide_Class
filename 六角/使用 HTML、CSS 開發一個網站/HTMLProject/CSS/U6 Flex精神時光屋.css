@@ -1,0 +1,643 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ?6-2 Flex裡面可以包Flex */
+.header{
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+  }
+  
+  .menu{
+    display: flex;
+  }
+  .menu li{
+    width: 80px;
+    text-align: center;
+  }
+  .menu li a{
+    text-decoration: none;
+    background: gray;
+    color: #fff;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menu li a:hover{
+    background: blue;
+  }
+
+
+/* ?U6修練時光屋 第1個作業 */
+*,*::before,*::after{
+	/* 這個語法意思是讓全部的html標籤吃到這個效果 */
+		box-sizing: border-box;
+	}
+
+.no1{
+    display: flex;
+    width: 1168px;
+    margin: 0 auto;
+    background: #354b3a;
+    justify-content: space-between;
+}
+.block{
+    width: 375px;
+    justify-content: center;
+    border: 1px solid #364d3b;
+}
+.b1-1{
+    background: #e7eeea;
+}
+.b1-1 h2{
+    font-size: 85px;
+    color: #37523d;
+    text-align: center;
+    font-weight: bold;
+    padding: 90px 0px;
+}
+.b1-2{
+    background: #fff;
+    padding: 28px;
+}
+.block h3{
+    color: #415b47;
+    font-size: 28px;
+    padding-bottom: 33px;
+    font-weight: bold;
+}
+.block p{
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 56px;
+}
+
+
+/* ?U6修練時光屋 第2個作業 */
+.no2{
+    margin: 0 auto;
+    background: #fff;
+    width: 1140px;
+    height: 628px;
+    display: flex;
+    justify-content: space-around;
+}
+.block2{
+    background: #e7eeea;
+    width: 553px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.b2{
+    padding-left: 40px;
+    padding-right: 32px;
+}
+.b2 h1{
+    font-size: 26px;
+    font-weight: bold;
+    color: #37523d;   
+    margin-bottom: 39px;
+}
+.b2 p{
+    font-size: 24px; 
+    line-height: 1.5;
+    margin-bottom: 39px;
+}
+.b2 h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: #37523d;
+}
+
+
+/* ?U6修練時光屋 第3個作業 */
+.no3{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+.block3-1{
+    background: #e7eeea;
+}
+.block3-1 a{
+    color: #465f4c;
+    font-size: 22px;
+    line-height: 3;
+	display: block;
+    text-align: center;
+	text-decoration: none;
+}
+.block3-1 a:hover{
+	background: #37523d;
+	color: #fff;
+}
+.block3-1 img{
+    padding: 70px 15px 15px ;
+}
+.block3-2{
+    width: 775px;
+    padding: 70px 83px 14px 90px;
+}
+.block3-2 h1{
+    color: #37523d;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.block3-2 p{
+    font-size: 22px;
+    line-height: 1.5;
+    padding-bottom: 35px;
+}
+.block3-2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 595px;
+}
+.block3-2 li{
+    padding-bottom: 4px;
+}
+
+
+/* ?U6修練時光屋 第4個作業 */
+.no4{
+    width: 1280px;
+    margin: 0 auto;
+}
+.block4-1{
+    background: #e7eeea;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.31);
+-webkit-box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.31);
+}
+.block4-1 img{
+    padding: 15px 0px;
+}
+.block4-1 ul{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block4-1 li a{
+    display: block;
+    font-size: 22px;
+    color:#354b3a;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 36px 0px;
+}
+.block4-1 li a:hover{
+    text-decoration: underline;
+}
+
+
+.block4-2{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.block4-2 h3{
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+.block4-2 img{
+    margin: 25px 0px;
+}
+.block4-2 p{
+    line-height: 1.5;
+}
+
+
+.block4-3{
+    background: #37523d;
+}
+.block4-3 ul{
+    width: 235px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.block4-3 li a{
+    display: block;
+    font-family: monospace;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0px;
+}
+.block4-3 li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* ?U6修練時光屋 第5個作業 */
+.no5{
+    width: 1285px;
+    margin: 0 auto;
+}
+.block5-1{
+    background: #e7eeea;
+    padding: 15px 45px 30px 25px;
+    border-radius: 10px;
+}
+.block5-1 ul {
+    display: flex;
+}
+.block5-1 li{
+    display: flex;
+}
+.block5-1-1{
+    margin-left: 5px;
+}
+.block5-1-1 h1{
+    color: #354b3a;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.block5-1-1 p{
+    color: #415b47;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+.block5-2{
+    margin: 45px 0px;
+}
+.block5-2 ul{
+    display: flex;
+    justify-content: space-around;
+    background: #e7eeea;
+    text-align: center;
+    padding: 5px 0px 30px;
+    border-radius: 10px;
+}
+.block5-2 li{
+    width: 360px;
+}
+.block5-2-1 h1{
+    color: #354b3a;
+    font-weight: bold;
+    margin-bottom: 22px;
+    margin-top: 5px;
+}
+.block5-2-1 p{
+    color: #415b47;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.block5-3{
+    background: #e7eeea;
+    padding: 20px;
+    border-radius: 10px;
+}
+.blockk5{
+    display: flex;
+    align-items: center;
+}
+.blockk55{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.block5-3-1{
+    padding-left: 5px;
+}
+.block5-3-1 h1{
+    color: #354b3a;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.block5-3-1 p{
+    color: #415b47;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* ?U6修練時光屋 第6個作業 */
+
+.no6{
+    width: 910px;
+    margin: 0 auto;
+    background: #37523d;
+    padding: 10px;
+}
+.block6-1{
+    background: #e7eeea;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+.block6-1 a{
+    color: #354b3a;
+    font-size: 23px;
+    font-family: monospace;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0px;
+}
+.block6-1 a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.block6-2{
+    background: #fff;
+    display: flex;
+}
+.block6-2 img{
+    padding: 30px 50px;
+}
+.block6-2-1{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.block6-3 h2{
+    font-size: 22px;
+    padding: 55px 0px 25px;
+    font-weight: bold;
+}
+.block6-3 p{
+    line-height: 1.4;
+    padding-right: 57px;
+}
+.block6-4{
+    padding-bottom: 30px;
+}
+.block6-4 ul{
+    display: flex;
+}
+.block6-4 li{
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: monospace;
+}
+.block6-4 a{
+    color: #354b3a;
+}
+.block6-4 a:hover{
+    background: #acd2fe;
+}
+
+
+/* ?U6修練時光屋 第7個作業 */
+.no7{
+    width: 1000px;
+    margin: 0 auto;
+}
+.block7-1{
+    background: #e7eeea;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block7-2{
+    font-size: 24px;
+    color: #354b3a;
+    font-weight: bolder;
+    text-align: center;
+}
+.block7-2 img{
+    margin-bottom: 25px;
+}
+.block7-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.block7-3 ul{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block7-3 li a{
+    font-size: 18px;
+    color: #364d3b;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 30px 0px;
+}
+.block7-4 img{
+    display: block;
+    padding: 14.5px 0px;
+}
+.block7-3 li a:hover{
+    color: #fff;
+    background: #354b3a;
+}
+
+
+/* ?U6修練時光屋 第8個作業 */
+.no8{
+    width: 855px;
+    margin: 0 auto;
+    display: flex;
+}
+.block8-1{
+    background: #b3d4d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+.block8-2 p{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: cursive;
+}
+.no8 img{
+    width: 545px;
+}
+
+
+/* ?U6修練時光屋 第9個作業 */
+.no9{
+    width: 310px;
+    margin: 0 auto;
+}
+.block9-1{
+    border: 1px solid #e7eeea;
+    margin-bottom: 16px;
+}
+.block9h1{
+    font-size: 26px;
+    font-weight:bold;
+    background:#e7eeea;
+    color: #829886;
+    text-align: center;
+    padding: 20px 0px;
+}
+.block9-2{
+    color: #829886;
+    padding: 16px;
+}
+.block9-3{
+    display: flex;
+    justify-content: space-between;
+    font-family: Comic Sans MS;
+}
+.p{
+    font-weight: bold;
+    padding: 14px 0px 22px;
+}
+.block9-3 h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.block9-4{
+    border: 1px solid #e7eeea;
+}
+.block9-5{
+    display: flex;
+    margin: 16px;
+}
+.block9-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    color: #829886;
+    font-family: Comic Sans MS;
+    margin-left: 16px;
+}
+.block9-6 h2{
+    font-weight: bold;
+}
+
+
+/* ?U6修練時光屋 第10個作業 */
+.no10{
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 微軟正黑體,sans-serif;
+}
+.block10-1{
+    width: 600px;
+    margin-left: 5px;
+}
+.block10-1 a, .block10-1 h2, .addcart{
+    font-size: 24px;
+    padding: 20px 0;
+    border: 1px solid #e7eeea;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+.block10-1 a, .addcart{
+    color: #37523d;
+    text-decoration: none;
+}
+.block10-1 h2{
+    color: #fff;
+    background: #354b3a;
+}
+.block10-1 a:hover{
+    background: #e7eeea;
+}
+.block10-2 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block10-2 li{
+    margin: 0 0 16px 22px;
+}
+.block10-4{
+    font-size: 22px;
+    display: flex;
+}
+.block10-4 p{
+    text-align: center;
+    border: 1px solid #e7eeea;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #37523d;
+}
+.block10-4 p:first-child{
+    width: 185px;
+}
+.block10-4 p:last-child{
+    width: 115px;
+    font-weight: bold;
+}
+.addcart{
+    background-color: #e7eeea;
+}
+.addcart:hover{
+    background: #354b3a;
+    color: #fff;
+}
+.block10-2 img{
+    vertical-align: bottom;
+    /* 圖片垂直對齊該行元素的最低位置。 */
+}

@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.區塊元素{
+    background: blueviolet;
+    color: white;
+    /* width: 200px; */
+    /* 寬度的意思 */
+    height: 30px;
+    /* 區塊元素會內建 display: block; 使其成為區塊元素*/
+}
+
+.行內元素{
+    color: coral;
+}
+.today{
+    background: rgb(11, 0, 128);
+    color: white;
+    font-size: 30px;
+}
+.red{
+	background: black;
+	color: white;
+	font-size: 30px;
+}
+.google標籤{
+	background: darkslateblue;
+	color: white;
+}
+.google{
+	background: chartreuse;
+	color: black;
+	font-size: 20px;
+}
+
+.style1{
+	line-height: 2;
+}
+.style1 a{
+	color: red;
+}
+.style1 p{
+	color: darkblue;
+	font-weight: bold;
+	/* 粗體的意思 */
+	font-size: 25px;
+}
+.style1 .content1{
+	font-size: 30px;
+}
+.style2 {
+	color: blue;
+	font-size: 20px;
+}
+.style2 h2{
+	font-size: 40px;
+}
+
+.box{
+	border: 3px solid blue;
+	/* border線條!! */
+	width: 900px;
+	/* width寬度!! */
+	/* 盡量不要寫死高度不然內容會超過 */
+	margin-left: 30px;
+	/* 將整個box往左(向外)推30px */
+	padding-left: 30px;
+	/* 把box裡面全部的內容往右(向內)推30px */
+}
+.box p{
+	margin-bottom: 30px;
+	/* 區塊元素會盡可能占滿整個空間，會依照父元素的寬度自動適應延伸佔滿 */
+}
+
+.box h1{
+	font-size: 30px;
+}
+
+.boxx{
+	width: 100px;
+	height: 100px;
+	background: black;
+	padding: 50px;
+	/* padding也會被列入div的實際寬度 */
+	/* 因此寬高會變成200x200 */
+	border: 10px solid blue;
+	/* 寬高變成220x220 */
+	margin-bottom: 20px;
+	/* 只有padding border會影響實際寬高 */
+	/* margin並不會影響到 */
+	/* 但在網頁上佔的空間實際上是220x240 */
+	color: #fff;
+}
+.boxxx{
+	width: 100px;
+	background: black;
+	padding: 50px;
+	border: 10px solid blue;
+	margin-bottom: 20px;
+	color: #fff;
+	/* 因為沒寫高度，裡面的內容會自適應推擠高度 */
+}
+
+.wrap{
+	width: 100px;
+	height: 100px;
+	background: black;
+	margin-right: auto;
+	margin-left: auto;
+}
+.header{
+	width: 50px;
+	height: 50px;
+	background: red;
+	margin-left: auto;
+	margin-right: auto;
+	/* 這樣她會在.wrap裡面置中，因為他會先看父元素是誰 */
+}
+
+.wrapp{
+	width: 400px;
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+.headerr{
+	height: 50px;
+	background: chartreuse;
+}
+.content{
+	background: cadetblue;
+	padding: 20px;
+}
+.content p{
+	margin-bottom: 20px;
+}
+.footer{
+	height: 50px;
+	background: pink;
+}
+
+.wrapp{
+	width: 400px;
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+.headerr{
+	height: 50px;
+	background: chartreuse;
+}
+.content{
+	background: cadetblue;
+	padding: 20px;
+}
+.content p{
+	margin-bottom: 20px;
+}
+.apple{
+	background:darkblue;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	/* 區塊內的文字段落靠左靠中靠右*/
+}
+
+
+*,*::before,*::after{
+	/* 這個語法意思是讓全部的html標籤吃到這個效果 */
+		box-sizing: border-box;
+	}
+.boxbox{
+	width: 50px;
+	height: 50px;
+	border: 10px solid blue;
+	padding: 10px;
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	/* 原本會變成90x90 */
+	/* box-sizing: border-box; 語法會把border與padding都算在裡面變成總共50x50的寬高 */
+}
+.boxbox2{
+	width: 50px;
+	height: 50px;
+	border: 10px solid blue;
+	padding: 10px;
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}

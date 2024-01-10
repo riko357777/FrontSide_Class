@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.bar ul{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px;
+	background-color: #f6f6f6;
+}
+.bar a{
+	text-decoration: none;
+	display: flex;
+	padding: 10px 0px;
+}
+.facebookicon{
+    width: 16px;
+}
+.fans{
+	border-right: 1px solid #cccccc;
+	padding: 0px 10px 0px 5px;
+}
+.twittericon{
+    margin: 0 5px 0 10px;
+    width: 16px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.headerlogo h3 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    padding: 0 10px 0px 20px;
+}
+.header ul a{
+    font-size: 18px;
+    color: #08ce9c;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+}
+.header ul a:hover{
+    border-bottom: 2px solid #08ce9c;
+}
+
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    width: 1000px;
+    height: 346px;
+    display: flex;
+    align-items: center;
+}
+.slogan{
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.2;
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+.content ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 10px 50px;
+}
+.content ul li{
+    width: 314px;
+    border-bottom: 3px solid rgb(222, 220, 220);
+    border-left: 1px solid #D0D0D0;
+	border-right: 1px solid #d0d0d0;
+}
+.content img{
+    width: 100%;
+}
+.content h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+.content p{
+    letter-spacing: 2px;
+    margin-left: 6px;
+    line-height: 25px;
+    margin: 0 30px 25px;
+    word-break: break-all;
+}
+
+
+
+.table h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table{
+    margin: 0 auto;
+    width: 836px;
+    margin-bottom: 50px;
+}
+.table tr{
+    border-top:1px solid rgb(222, 220, 220);
+    border-bottom:1px solid rgb(222, 220, 220);
+}
+.table th, td{
+    padding: 15px 80px 15px 30px;
+}
+.type{
+    background-color:#E0E0E0 ;
+    font-weight:450;
+}
+.color{
+    color: #08ce9c;
+}
+
+
+.contactus{
+	background:linear-gradient(#00644b,#009771);
+}
+.comment textarea{
+	width: 390px;
+	height: 251px;
+}
+.contactus h3{
+	font-size: 20px;
+	color: #ffff;
+	text-align: center;
+	padding: 10px 0 20px;
+	line-height: 2;
+}
+.signup{
+	margin: 0 40px;
+}
+.signup form{
+	display: flex;
+	justify-content: space-between;
+}
+.right input{
+	width: 485px;
+	display: block;
+	padding: 5px 0px;
+    margin: 8px 0px 20px;
+}
+.right label{
+	color: #fff;
+}
+.littleform{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	margin: 10px 0 28px 0;
+}
+.submit{
+	padding: 4px 25px;
+	color:#FFF;
+	background-color: #00cc99;
+	font-size : 16px;
+	border:none;
+	border-radius:3px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #fff;
+    color: #00cc99;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 25px 10px 20px;
+}
+.footerlogo h3 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+    width: 171px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap ;
+}
+.footercontactus{
+    display: flex;
+}
+.footercontactus2 a{
+    text-decoration: none;
+    color:#D9006C
+}
+.footercontactus1 li, .footercontactus2 li{
+    line-height: 2;
+    padding-left: 5px;
+}
+

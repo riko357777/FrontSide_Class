@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <!-- 新增的Afacad字體 -->
+    <link rel="stylesheet" href="CSS/技能網頁JS教學.html.css">
+    <title>Homework 1 功課說明 - 製作自己的技能網頁</title>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="resume_top">
+            <div class="tittle">
+                <div class="name">
+                    <h1>Leo Wang</h1>
+                    <h4>Student/Designer</h4>
+                </div>
+                <div class="email">
+                    <p>abcdefghij@google.com</p>
+                    <p>09-12-345-678</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="resume_bottom">
+            <div class="middle">
+                <div class="sidebar">
+                    <div class="profile">
+                        <h2 id="id1">Profile</h2>
+                        <p id="id2">Hi, I'm Leo Wang. I'm 24 years old and from Taiwan. I'm a student and designer. I'm
+                            interested in UI/UX design and web development. I hope to learn what I want to learn here.
+                        </p>
+                    </div>
+                    <div class="connection">
+                        <ul>
+                            <li>
+                                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png"
+                                    class="igicon" alt="" onclick="changeText()">
+                                <p>Leo Wang</p>
+                            </li>
+                            <li>
+                                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-128.png"
+                                    class="fbicon" alt="" onclick="changeurl()">
+                                <p>Leo Wang</p>
+                            </li>
+                            <li>
+                                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-128.png"
+                                    class="xicon" alt="">
+                                <p>Leo Wang</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul class="ability">
+                        <li class="hl">
+                            <div class="hl_circle1">
+                                <div class="hl_square1"></div>
+                                <div class="hl_square2"></div>
+                                <div class="hl_square3"></div>
+                                <div class="hl_square4"></div>
+                                <div class="hl_square5"></div>
+                                <div class="hl_circle2">
+                                    <h5>Hl</h5>
+                                </div>
+                            </div>
+                            <p>HTML</p>
+                        </li>
+                        <li class="cs">
+                            <div class="cs_circle1">
+                                <div class="cs_square1"></div>
+                                <div class="cs_square2"></div>
+                                <div class="cs_square3"></div>
+                                <div class="cs_square4"></div>
+                                <div class="cs_circle2">
+                                    <h5>Cs</h5>
+                                </div>
+                            </div>
+                            <p>Css</p>
+                        </li>
+                        <li class="js">
+                            <div class="js_circle1">
+                                <div class="js_square1"></div>
+                                <div class="js_circle2" id="jsid">
+                                    <h5>Js</h5>
+                                </div>
+                            </div>
+                            <p>JavaScript</p>
+                        </li>
+                        <li class="ps">
+                            <div class="ps_circle1">
+                                <div class="ps_square1"></div>
+                                <div class="ps_circle2">
+                                    <h5>Ps</h5>
+                                </div>
+                            </div>
+                            <p>Photoshop</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="personality">
+                    <h2>Personality Traits</h2>
+                    <ul>
+                        <li>
+                            <h6>Outgoing</h6>
+                            <div class="personality_square">
+                                <div class="outgoing1" id="outgoing1Id">
+                                    <div class="outgoing2"></div>
+                                    <div class="outgoing3"></div>
+                                    <div class="outgoing4"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Optimistic</h6>
+                            <div class="personality_square">
+                                <div class="optimistic1">
+                                    <div class="optimistic2"></div>
+                                    <div class="optimistic3"></div>
+                                    <div class="optimistic4"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Energetic</h6>
+                            <div class="personality_square">
+                                <div class="energetic1">
+                                    <div class="energetic2">
+                                        <div class="energetic3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Friendly</h6>
+                            <div class="personality_square">
+                                <div class="friendly1"></div>
+                                <div class="friendly2"></div>
+                                <div class="friendly3"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Witty</h6>
+                            <div class="personality_square">
+                                <div class="witty1">
+                                    <div class="witty2">
+                                        <div class="witty3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="time_school">
+                        <div class="time">
+                            <div class="time_line"></div>
+                            <div class="time_circle1">
+                                <div class="time_2023">
+                                    <h6 onclick="btn1('2023')">2023</h6>
+                                </div>
+                            </div>
+                            <div class="time_circle2">
+                                <div class="time_2018">
+                                    <h6 onclick="btn1('2018')">2018</h6>
+                                </div>
+                            </div>
+                            <div class="time_circle3">
+                                <div class="time_2015">
+                                    <h6 onclick="btn1('2015')">2015</h6>
+                                </div>
+                            </div>
+                            <div class="time_circle4">
+                                <div class="time_2012">
+                                    <h6 onclick="btn1('2012')">2012</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school">
+                            <ul id="info1">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://pic.616pic.com/ys_bnew_img/00/20/69/BC5SP55b7Y.jpg" alt="" id="people">
+        </div>
+        <div class="circle"></div>
+
+    </div>
+
+    <script>
+        function changeText(){
+            console.log("hellow instagame")
+            console.log(document.getElementById("id1").textContent)
+            console.log(document.getElementById("id2").textContent)
+
+            var title = "ABC"
+            var content ="DEF"
+            document.getElementById("id1").textContent=title
+            document.getElementById("id2").textContent=content
+        }
+
+        function changeurl(){
+            console.log("hellow facebook")
+            console.log(document.getElementById("people").src)
+            
+            var url = "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/345227988_613746137472309_3734990956712906379_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=wZvD2mThFWkAX_AmA2E&_nc_ht=scontent.ftpe7-2.fna&oh=00_AfBhPyLC1dtyDpqFs-dZkEMqtt3bTu0_aFcf4Qx_-aXWjw&oe=65855D46"
+            document.getElementById("people").src=url
+        }
+        function btn1(num){
+            console.log("btn:"+num)
+            //document.getElementById("jsid").className="ps_circle1"
+            //document.getElementById("jsid").className="cs_circle3"
+            if(num=="2023"){
+                document.getElementById("jsid").style.backgroundColor="blue"
+                document.getElementById("info1").innerHTML=`
+                                <li class="school_2023">
+                                    <h6>123 Company</h6>
+                                    <p>XXX Work</p>
+                                </li>
+                                `
+            }
+            if(num=="2018"){
+                document.getElementById("info1").innerHTML="<li class=\"school_2018\"><h6>456 University</h6><p>YYY Club</p></li>"
+            }
+            if(num=="2015"){
+                document.getElementById("info1").innerHTML="<li class=\"school_2015\">"
+                document.getElementById("info1").innerHTML=document.getElementById("info1").innerHTML+"<h6>789 Hight School</h6>"
+                document.getElementById("info1").innerHTML=document.getElementById("info1").innerHTML+"<p>ZZZ Club</p>"
+                document.getElementById("info1").innerHTML=document.getElementById("info1").innerHTML+"</li>"                            
+            }
+            if(num=="2012"){
+                var htmltag = ""
+                htmltag=htmltag+"<li class=\"school_2012\">"
+                htmltag=htmltag+"<h6>Junior Higt School</h6>"
+                htmltag=htmltag+"<p>QQQ Club</p>"
+                htmltag=htmltag+"</li>"
+                document.getElementById("info1").innerHTML=htmltag
+            }
+            console.log(document.getElementsByClassName("outgoing1").innerHTML)
+            document.getElementById("outgoing1Id").innerHTML="<input type=text name=aaa>"
+        }
+    </script>
+</body>
+
+</html>

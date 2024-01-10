@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ? 4-2 Html中結構&層級的概念 */
+.Firstul li{
+    display: inline-block;
+    /* display: inline-block = 讓所有東西在同一行排列 */
+    border: 1px solid black;
+    /* border = 讓邊框變成黑色 */
+    border-radius: 10px;
+    /* border-radius = 讓邊框變成圓角 */
+    padding: 5px 20px;
+    font-family: 標楷體;
+    letter-spacing: 5px;
+    /* letter-spacing = 調整字體間距 */
+    background-color: #efeff5;
+}
+
+
+/* ? 4-5 .CSS 分開撰寫 - class&id概念 */
+.U4-5 h1{
+    color: blue;
+}
+.button{
+    display: inline-block;
+    /* display: inline-block; 特性是大小會隨著內容決定 */
+    border: solid 1px black;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: 標楷體;
+    background-color: #efeff5;
+}
+.button:hover{
+    background-color: #9900ff;
+}
+.black_button{
+    background-color: black;
+    color: white;
+}
+/* 下面的會蓋掉上面的樣式 */
+#sp_text{
+    display: inline-block;
+    border: solid 1px black;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: red;
+    background-color: aquamarine;
+}
+#sp_text:hover{
+    background-color: #9900ff;
+}
+
+
+
+/* ? 4-6 .CSS 顯示方式 display block/inline */
+.header{
+    width: 1024px;
+    margin: 0 auto;;
+}
+.header ul{
+    display: flex;
+}
+.header li{
+    list-style: none;
+}
+.header a{
+    text-decoration: none;
+    padding: 15px 30px 8px;
+    background-color: #28d7ae;
+    border-bottom: solid 7px #28d7ae;
+    color: #fff;
+    letter-spacing: 3px;
+}
+#a_right{
+    padding: 15px 80px 8px;
+}
+.header a:hover{
+    border-bottom: solid 7px #7ee7ce;
+}
+
+
+
+/* ? 4-7 .CSS 元素位置 - 相對 / 絕對定位 */
+.U4-7{
+    width: 1456px;
+    position: relative;
+    /* 這邊是讓U4-7當作父元素，讓absolute能夠用父元素來定位 */
+}
+.U4-7 div{
+    border: 2px solid black;
+    width: 200px;
+    height: 150px;
+}
+.static{
+    position: static;
+    /* position: static; 特性是不會有任何變化 */    
+}
+.relative{
+    position: relative;
+    /* position: relative; 特性是會依照原本的位置做變化 */
+    left: 30px;
+}
+.absolute{
+    position: absolute;
+    /* position: absolute; 特性是會依照最近的父元素做變化 */
+    right: 50px;
+    top: 50px;
+}
+.fixed{
+    position: fixed;
+    /* position: fixed; 特性是會依照最近的父元素做變化 */
+    right: 50px;
+    top: 200px;
+}
+
+
+
+/* ? 4-9 .CSS 字體變化與span - 在文章段落中製作變化 */
+.fdmo_1{
+    font-family: 標楷體;
+}
+.fdmo_2{
+    font-size: 32px;
+}
+.fdmo_3{
+    color: #9900ff;
+}
+.fdmo_4{
+    font-size: 30px;
+    font-weight: 900;
+}
+.fdmo_5{
+    letter-spacing: 5px;
+}
+.fdmo_6{
+    line-height: 60px;
+}

@@ -1,0 +1,97 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ? 11-1 CSS3圓弧效果 */
+.box {
+    height: 150px;
+    width: 150px;
+    background: #000;
+    border-radius: 30px;
+    /* *若要變成圓形就寫50%s */
+    text-align: center;
+    color: #fff;
+    line-height: 150px;
+    /* *若有一行字 可以跟高度同px即可置中 */
+}
+
+.box2 {
+    height: 150px;
+    width: 150px;
+    background: red;
+    border-radius: 30px 30px 0 0px;
+    border: 10px solid blue;
+}
+
+
+/* ? 11-2 CSS3漸層效果 */
+.box3{
+    width: 1002px;
+    height: 405px;
+    background: linear-gradient(#00644b,#009771);
+    /* *背景漸層預設是從上到下渲染 */
+}
+
+.box4{
+    width: 1002px;
+    height: 405px;
+    background: -webkit-linear-gradient(left,red,yellow);
+    /* *需要加入前贅詞 不然網頁顯示不出來 */
+}
+
+
+/* ? 11-3 CSS3陰影效果 */
+.box5{
+    height: 200px;
+    width: 200px;
+    background: green;
+    box-shadow: 5px 5px 14px gray;
+    /* *第一個質是X軸 第二個Y軸 第三個是有柔焦的效果 */
+    margin: 30px;
+}

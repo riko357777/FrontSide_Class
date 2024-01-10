@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/U4 基礎HTML_CSS.css">
+    <title>U4 基礎HTML_CSS.css</title>
+</head>
+
+<body>
+
+    <!-- ? 4-1 Html中元素 & 排列的概念 -->
+    這裡是<i>一句話</i>，有<b>重點</b>想標註
+    <!-- b = 粗體 -->
+    <!-- i = 斜體 -->
+    <h1>h1是超級大的標題</h1>
+    <h2>h2是小一點的副標題</h2>
+    <h3>h3是小一點的副標題</h3>
+    <h4>h4是小一點的副標題</h4>
+    <h5>h5是小一點的副標題</h5>
+    <h6>h6是小一點的副標題</h6>
+    <p>p是內文喔喔喔<br>使用br會換行</p>
+
+    <img src="https://stickershop.line-scdn.net/stickershop/v1/product/24109708/LINEStorePC/main.png?v=1" width="200px"
+        alt=""><br>
+    <a target="_blank" href="http://google.com">這裡是a連結的使用方式</a><br>
+    <!-- target="_blank" = 在新分頁開啟 -->
+    <a target="_blank" href="https://www.w3schools.com/">這裡是W3Schools，裡面會有很多的參考資料</a>
+
+
+    <!-- ? 4-2 Html中結構&層級的概念 -->
+    <ol>
+        <li>項目</li>
+        <li>項目</li>
+        <li>項目</li>
+    </ol>
+    <!-- oi、ul的差別在於oi會有數字順序，ul不會有順序只會有點點 -->
+    <ul class="Firstul">
+        <li>首頁</li>
+        <li>簡介</li>
+        <li>作品</li>
+        <li>聯絡方式</li>
+    </ul>
+    <br><br><br><br><br>
+
+
+    <!-- ? 4-3 <Project 0> 簡易版本自我介紹 -->
+    <div class="card">
+        <h3>動畫網頁課程範例0-簡易自我介紹</h3>
+        <h2>
+            王子齊<span>Tzu-Chi Wang</span>
+        </h2>
+        <h5>資拓宏宇-設計師</h5>
+        <hr>
+        <!-- hr = 水平分隔線 -->
+        <p>一個小菜雞隨意做一個網頁，甘巴爹喔！！</p>
+    </div>
+
+
+    <!-- ? 4-4 .CSS 直接調整外觀與顏色框線 -->
+    <h1>標題字</h1>
+    <h1 style="color: red;">紅的標題字</h1>
+    <h1 style="color: blue; letter-spacing: 10px;">藍的標題字(有10px的間距)</h1>
+    <h1 style="border: solid 2px green; width: 400px; height: 300px; background: #efeff5;">標題字</h1>
+    <br><br><br><br><br>
+
+
+
+    <!-- ? 4-5 .CSS 分開撰寫 - class&id概念 -->
+    <div class="U4-5">
+        <h1>標題</h1>
+        <div class="button">第一個按鈕</div>
+        <div class="button">第二個按鈕</div>
+        <div class="button black_button">第三個按鈕</div>
+        <!-- 這樣的意思會是先吃到CSS裡button的樣式，再吃到black_button的樣式 -->
+        <div id="sp_text">id存取</div>
+        <!-- id是獨一無二的存在，同樣的名稱只能有一個，不然寫JS的時候不會被改動 -->
+    </div>
+    <br><br><br><br><br>
+
+
+
+    <!-- ? 4-6 .CSS 顯示方式 display block/inline -->
+    <div class="header">
+        <ul>
+            <li><a href="#">課程簡介</a></li>
+            <li><a href="#">預計單元</a></li>
+            <li><a href="#">常見問題</a></li>
+            <li><a href="#" id="a_right">留言發問</a></li>
+        </ul>
+    </div>
+    <br><br><br><br><br>
+
+
+
+    <!-- ? 4-7 .CSS 元素位置 - 相對 / 絕對定位 -->
+    <div class="U4-7">
+        <h3>CSS定位方式</h3>
+        <div class="static">static 會自動排列下來</div>
+        <div class="relative">relative 會自動排列下來，而且可以調整偏移(左邊離30px)</div>
+        <div class="absolute">absolute 可以絕對定位</div>
+        <div class="fixed">fixed 會固定在視窗特定位置</div>
+    </div>
+    <br><br><br><br><br>
+
+
+
+    <!-- ? 4-9 .CSS 字體變化與span - 在文章段落中製作變化 -->
+    <div class="fdmo_1">font-family = 字體的種類</div>
+    <div class="fdmo_2">font-size = 字體的大小</div>
+    <div class="fdmo_3">color = 字體的顏色</div>
+    <div class="fdmo_4">font-weight = 字體的粗細</div>
+    <div class="fdmo_5">letter-spacing = 字體的間距</div>
+    <div class="fdmo_6">line-height = 字體的行距</div>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

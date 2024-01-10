@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U10 表格與表單設計技巧</title>
+    <link rel="stylesheet" href="CSS/U10 表格與表單設計技巧.css">
+</head>
+
+<body>
+
+    <!-- ? 10-1 認識HTML表格 -->
+    <!-- ? 10-2 設定Table上的css樣式  -->
+    <table class="price">
+        <tr>
+            <th>標題一</th>
+            <th>標題二</th>
+            <th>標題三</th>
+            <!-- th預設是粗體 th是標題內容 -->
+        </tr>
+        <tr>
+            <td>內容一</td>
+            <td>內容二</td>
+            <td>內容三</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <br><br><br><br><br>
+
+
+    <!-- ? 10-4 表單三劍客:form 輸入欄位 Submit -->
+    <!-- ? 10-6 使用label placeholder提升表單使用者體驗-->
+    <form action="U10 表格與表單設計技巧.html">
+        <label for="mail">電子郵件：</label>
+        <!-- label 用在點這個文字會跳到後面的欄位 for會對應文字欄位的id -->
+        <input id="mail" type="text" placeholder="請輸入電子郵件" name="mail">
+        <!-- 文字欄位 -->
+        <!-- placeholder 輔助性欄位說明的功能 -->
+        <label for="person">姓名：</label>
+        <input id="person" type="text" placeholder="請輸入姓名" name="person">
+        <input type="submit" value="下一步">
+        <!-- 按鈕 -->
+    </form>
+    <br><br><br><br><br>
+
+
+    <!-- ? 10-8 表單元素  radio、checkbox -->
+    <form action="U10 表格與表單設計技巧.html">
+        <h2>性別</h2>
+        <input type="radio" name="sex" value="male">男生
+        <input type="radio" name="sex" value="woman">女生
+        <!-- radio 圓形按鈕  若name一樣就只有單選的功能-->
+        <h2>興趣</h2>
+        <input type="checkbox" name="hobby" value="movie">看電影
+        <input type="checkbox" name="hobby" value="music">聽音樂
+        <input type="checkbox" name="hobby" value="comic">看漫畫
+        <!-- checkbox 方形按鈕 但name一樣還是能夠多選-->
+        <input type="submit" value="送出">
+    </form>
+    <br><br><br><br><br>
+
+
+    <!-- ? 10-9 表單元素 select、textarea -->
+    <form action="U10 表格與表單設計技巧.html">
+        <label for="birth">生日：</label>
+        <select id="birth" name="birth">
+            <option value="1900">1900</option>
+            <option value="1901">1901</option>
+        </select>
+        <!-- select下拉式選單 -->
+        <h2>內容：</h2>
+        <textarea name="content" cols="30" rows="10"></textarea>
+        <!-- textarea 多行的文字欄位 cols一行可以打n個字元 row可以總共有n行 -->
+        <br>
+        <input type="submit" value="送出">
+    </form>
+    <br><br><br><br><br>
+
+
+    <!-- ? 10-10 使用CSS修改表單(Form)樣式 -->
+    <form action="U10 表格與表單設計技巧.html">
+        <input type="text">
+        <input type="button" value="點選" class="button1">
+        <!-- button單純是個按鈕並沒有效果(不會送出) -->
+    </form>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+</body>
+</html>

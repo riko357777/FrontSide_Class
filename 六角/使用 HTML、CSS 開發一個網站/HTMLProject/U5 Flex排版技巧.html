@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五單元 Flex排版技巧</title>
+    <link rel="stylesheet" href="CSS/U5 Flex排版技巧.css">
+</head>
+<body>
+<!-- 5-1 .Flex排版介紹 -->
+    <!-- 外層語法 -->
+        <!-- display : 必備屬性 -->
+        <!-- flex-direction : 決定flex軸線 -->
+        <!-- flex-wrap : 決定換行的屬性 -->
+        <!-- justify-content : 主要線軸的對齊 -->
+        <!-- align-items : 交錯線軸的對齊 -->
+    <!-- 內層語法 -->
+        <!-- flex -->
+            <!-- flex-grow : 伸展比 -->
+            <!-- flex-shrink : 收縮比 -->
+            <!-- flex-bassis : 絕對值 -->
+        <!-- order : 排序 -->
+        <!-- algin-self : 單一物件的交錯軸對齊 -->
+
+
+<!-- 5-3+5-4.Flex外層屬性(container)介紹 -->
+<div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum ut, animi minima corrupti qui unde earum numquam minus temporibus laboriosam dolores veritatis odio dicta, ullam eius excepturi architecto quisquam?</div>
+</div>
+<br><br><br>
+    
+<!-- 5-5 .Flex 主軸 -->
+<!-- 5-6 .flex-dirction - 決定flex軸線 -->
+    <!-- flex-direction: row(default); -->
+        <!-- 主軸從左到右(預設) -->
+    <!-- flex-direction: row-reverse; -->
+        <!-- 主軸從右到左 -->
+    <!-- flex-direction: column; -->
+        <!-- 主軸從上到下 -->
+    <!-- flex-direction: column-reverse -->
+        <!-- 主軸從下到上 -->
+
+<!-- 5-7 .justify-content - 決定主軸對齊方式 -->
+<div class="container1">
+    <div class="itemm itemm1">1</div>
+    <div class="itemm itemm2">2</div>
+    <div class="itemm itemm3">3</div>
+</div>
+<br><br><br>
+
+<!-- 5-8 設計一個Flex並排選單-->
+<ul class="menu">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">政治</a></li>
+    <li><a href="#">娛樂</a></li>
+    <li><a href="#">論壇</a></li>
+    <li><a href="#">財經</a></li>
+    <li><a href="#">運動</a></li>
+</ul>
+<br><br><br>
+
+<!-- 5-9 決定換行屬性 -->
+<ul class="menu1">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">政治</a></li>
+    <li><a href="#">娛樂</a></li>
+    <li><a href="#">論壇</a></li>
+    <li><a href="#">財經</a></li>
+    <li><a href="#">運動</a></li>
+    <li><a href="#">國際</a></li>
+    <li><a href="#">生活</a></li>
+</ul> 
+<br><br><br>
+
+<!--  -->
+
+<!-- 5-10 .align-items 交錯軸對齊方式 -->
+<!-- 調整主軸的對齊是用 justify-content -->
+<!-- 調整交錯軸對齊是用 align-items -->
+
+</body>
+</html>

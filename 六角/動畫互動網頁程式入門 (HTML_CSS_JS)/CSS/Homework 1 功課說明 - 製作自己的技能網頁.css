@@ -1,0 +1,742 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+	/* border: solid 1px black!important; */
+	position: relative;
+	font-family: 'Quicksand'!important;
+}
+.main{
+	width: 794px;
+	height: 1123px;
+	margin: 0 auto;
+	border: solid 1px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+	border-radius: 30px 30px 30px 30px;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	background-image:  url('https://pic.52112.com/2020/12/05/22/05223158_47f64f03f0_small.png'), linear-gradient(#e9e0ce, #e9e0ce);
+    background-size: 100% 40%, 100% 60%;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+}
+.resume_top{
+	width: 100%;
+	height: 40%;
+
+}
+.tittle{
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 25px;
+	padding-top: 20px;
+}
+
+.name h1{
+	color: #463920;
+	font-size: 34px;
+	font-weight: 600;
+	margin-bottom: 7px;
+}
+.name h4{
+	color: #d7c7a7;
+	font-size: 16px;
+}
+.email p{
+	color: #6a562f;
+	font-weight: 600;
+	text-align: end;
+	line-height: 1.6;
+}
+
+
+.resume_bottom{
+	width: 100%;
+	height: 60%;
+}
+.middle{
+	display: flex;
+	height: 170px;
+	margin: 90px 20px 10px 25px;
+}
+.sidebar{
+	display: flex;
+	width: 50%;
+}
+.profile{
+	width: 50%;
+	height: 100%;
+}
+.profile h2{
+	color: #463920;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.profile p{
+	color: #6a562f;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.connection{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	margin: 45px 0px 15px;
+}
+.connection ul li img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.connection ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.connection ul li{
+	display: flex;
+	align-items: center;
+}
+.connection ul li p{
+	color: #6a562f;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* * Skills */
+.skills{
+	width: 50%;
+	height: 100%;
+}
+.skills h2{
+	color: #463920;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.ability{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* * skills-第一個圓 */
+.hl_circle1{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #6a562f;
+	overflow: hidden;
+}
+.hl_square1{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+}
+.hl_square2{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(45deg);
+	/* 將一個元素旋轉幾度 */
+	transform-origin: bottom left;
+	/* 指定元素旋轉的中心點 */
+}
+.hl_square3{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(90deg);
+	transform-origin: bottom left;
+}
+.hl_square4{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(135deg);
+	transform-origin: bottom left;
+}
+.hl_square5{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(180deg);
+	transform-origin: bottom left;
+}
+.hl_circle2{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #e9e0ce;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hl_circle2 h5{
+	color: #463920;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+
+/* * skills-第二個圓 */
+.cs_circle1{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #6a562f;
+	overflow: hidden;
+}
+.cs_square1{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+}
+.cs_square2{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(45deg);
+	/* 將一個元素旋轉幾度 */
+	transform-origin: bottom left;
+	/* 指定元素旋轉的中心點 */
+}
+.cs_square3{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(90deg);
+	/* 將一個元素旋轉幾度 */
+	transform-origin: bottom left;
+	/* 指定元素旋轉的中心點 */
+}
+.cs_square4{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: #f7f4ed;
+	transform: rotate(135deg);
+	/* 將一個元素旋轉幾度 */
+	transform-origin: bottom left;
+	/* 指定元素旋轉的中心點 */
+}
+.cs_circle2{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #e9e0ce;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cs_circle2 h5{
+	color: #463920;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/* * skills-第三個圓 */
+.js_circle1{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #6a562f;
+	overflow: hidden;
+}
+.js_square1{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background: linear-gradient(to top left, #f7f4ed 50%, #6a562f 50%);
+	transform: rotate(-45deg);
+	/* 將一個元素旋轉幾度 */
+	transform-origin: bottom left;
+	/* 指定元素旋轉的中心點 */
+}
+.js_circle2{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #e9e0ce;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.js_circle2 h5{
+	color: #463920;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/* * skills-第四個圓 */
+.ps_circle1{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #6a562f;
+	overflow: hidden;
+}
+.ps_square1{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background: linear-gradient(to top left, #f7f4ed 50%, #6a562f 50%);
+	transform: rotate(-45deg);
+	/* 將一個元素旋轉幾度 */
+	transform-origin: bottom left;
+	/* 指定元素旋轉的中心點 */
+}
+.ps_circle2{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #e9e0ce;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ps_circle2 h5{
+	color: #463920;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.ability li p{
+	font-size: 14px;
+	color: #463920;
+	font-weight: bold;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.content{
+	display: flex;
+	margin: 0px 25px;
+}
+/* * Personality Traits 人格特質 */
+.personality{
+	width: 50%;
+}
+.personality h2{
+	color: #463920;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.personality ul{
+	height: 340px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0px 20px 0px 20px;
+}
+.personality li{
+	color: #463920;
+	font-size: 16px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+.personality_square{
+	height: 18px;
+	width: 200px;
+	border: solid 1px #463920;
+}
+
+
+/* * Outgoing 外向的 */
+.outgoing1{
+	height: 100%;
+	background-color: #f7f4ed;
+}
+.outgoing2{
+	height: 100%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+	position: absolute;
+	left: 75%;
+}
+.outgoing3{
+	height: 100%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+	position: absolute;
+	left: 50%;
+}
+.outgoing4{
+	height: 100%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+	position: absolute;
+	left: 25%;
+}
+
+/* * Optimistic 樂觀的 */
+.optimistic1{
+	height: 100%;
+	background-color: #f7f4ed;
+}
+.optimistic2{
+	height: 100%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+	position: absolute;
+	left: 75%;
+}
+.optimistic3{
+	height: 100%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+	position: absolute;
+	left: 50%;
+}
+.optimistic4{
+	height: 100%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+	position: absolute;
+	left: 25%;
+}
+
+/* * Energetic 有活力的 */
+.energetic1{
+	height: 100%;
+	width: 75%;
+	background-color: #f7f4ed;
+	border-right: solid 1px #6a562f;
+}
+.energetic2{
+	height: 100%;
+	width: 67%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+}
+.energetic3{
+	height: 100%;
+	width: 50%;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+}
+
+/* * Friendly 友善的 */
+.friendly1{
+	height: 100%;
+	width: 75%;
+	background-color: #f7f4ed;
+	border-right: solid 1px #6a562f;
+	position: absolute;
+	left: 0%;
+	z-index: 1;
+}
+.friendly2{
+	height: 100%;
+	border-left: dashed 1px #6a562f;
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+}
+.friendly3{
+	height: 100%;
+	border-left: dashed 1px #6a562f;
+	position: absolute;
+	left: 25%;
+	z-index: 2;
+}
+
+/* * Witty 風趣的 */
+.witty1{
+	height: 100%;
+	width: 150px;
+	background-color: #f7f4ed;
+	border-right: solid 1px #6a562f;
+}
+.witty2{
+	height: 100%;
+	width: 100px;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+}
+.witty3{
+	height: 100%;
+	width: 50px;
+	background-color: #f7f4ed;
+	border-right: dashed 1px #6a562f;
+}
+
+
+/* * Education */
+.education{
+	width: 50%;
+	height: 100%;
+	color: #463920;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.time_school{
+	display: flex;
+}
+.time{
+	width: 20px;
+	height: 310px;
+	margin: 40px 0 0 120px;
+}
+
+.time_line{
+	border-left: 2px solid #463920;
+	height: 270px;
+	position: absolute;
+	left: 9.5px;
+	top: 20px;
+}
+
+
+/* * 2023年 */
+.time_circle1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f7f4ed;
+	position: absolute;
+}
+.time_2023{
+	width: 80px;
+	height: 40px;
+	border-radius: 7px;
+	position: absolute;
+	left: -105px;
+	top: -10px;
+	background-color: #f7f4ed;
+}
+
+/* * 2018年 */
+.time_circle2{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f7f4ed;
+	position: absolute;
+	top: 90px;
+}
+.time_2018{
+	width: 80px;
+	height: 40px;
+	border-radius: 7px;
+	position: absolute;
+	left: -105px;
+	top: -10px;
+	background-color: #f7f4ed;
+}
+/* * 2015年 */
+.time_circle3{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f7f4ed;
+	position: absolute;
+	top: 180px;
+}
+.time_2015{
+	width: 80px;
+	height: 40px;
+	border-radius: 7px;
+	position: absolute;
+	left: -105px;
+	top: -10px;
+	background-color: #f7f4ed;
+}
+
+/* * 2012年 */
+.time_circle4{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f7f4ed;
+	position: absolute;
+	top: 270px;
+}
+.time_2012{
+	width: 80px;
+	height: 40px;
+	border-radius: 7px;
+	position: absolute;
+	left: -105px;
+	top: -10px;
+	background-color: #f7f4ed;
+}
+
+/* *設定年份所有三角形樣式與字體樣式 */
+.time_2023::after,.time_2018::after,.time_2015::after,.time_2012::after{
+	content: "";
+	position: absolute;
+	right: -18px;  /* 調整三角形的水平位置 */
+	top: 10px;  /* 調整三角形的垂直位置 */
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent transparent #f7f4ed;  /* 設定三角形的顏色 */
+}
+.time_2023 h6,.time_2018 h6,.time_2015 h6,.time_2012 h6{
+color: #463920;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin-top: 10px;
+}	
+
+
+/* * 學校 */
+.school{
+	width: 60%;
+}
+.school ul{
+	height: 312px;
+	margin: 30px 0px 0px 20px ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.school h6{
+	font-size: 22px;
+    text-align: left;
+	color: #463920;
+}
+.school p{
+	color: #6a562f;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: start;
+	line-height: 1.5;
+}
+
+
+
+/* *中間的頭貼 */
+.photo{
+	width: 470px;
+	height: 470px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -105%);
+}
+.photo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.circle{
+	width: 470px;
+	height: 470px;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-45%, -105%);
+}

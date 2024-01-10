@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U5 系統性管理開發</title>
+    <link rel="stylesheet" href="CSS/U5 系統性管理開發.css">
+</head>
+<body>
+
+    <!-- ? 5-1 .html 縮寫模組 - Emmet介紹 -->    
+    .card*2>h2.tittle{標題}+hr+p.content{內文}
+    <div class="card">
+        <h2 class="tittle">標題</h2>
+        <hr>
+        <p class="content">內文</p>
+    </div>
+    <div class="card">
+        <h2 class="tittle">標題</h2>
+        <hr>
+        <p class="content">內文</p>
+    </div>
+    <br><br>
+    ul>li{預設選項$}*5
+    <ul>
+        <li>預設選項1</li>
+        <li>預設選項2</li>
+        <li>預設選項3</li>
+        <li>預設選項4</li>
+        <li>預設選項5</li>
+    </ul>
+    <br><br>
+    div.header(h2{表頭})+.content(h2{標題}+hr+p{內文})+.bottom(h2{表尾}+p{內文})
+    <div class="header"></div>
+    <h2>表頭</h2>
+    <div class="content"></div>
+    <h2>標題</h2>
+    <hr>
+    <p>內文</p>
+    <div class="bottom"></div>
+    <h2>表尾</h2>
+    <p>內文</p>
+</body>
+</html>

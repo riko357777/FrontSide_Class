@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: 微軟正黑體;
+    position: relative;
+    overflow: hidden;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f4f9ff;
+    border-top: solid 20px #034AA6;
+    border-bottom: solid 20px #034AA6 ;
+    /* display: grid;
+    這個設定會將一個 HTML 元素變成一個網格容器，並使其所有直接子元素成為網格項目。這個網格容器將生成一個由行和列組成的二維網格，並將其子元素放入這個網格中。
+    place-items: center;
+    這個設定是 align-items 和 justify-items 的縮寫，用於控制網格項目在網格容器的行和列中的對齊方式。center 值會將網格項目置於其所在格子的中心位置。 */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+.namecard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px 20px 30px;
+    margin: 0 auto;
+    /* margin-top: 150px; */
+    background-color: #F2F2F2;
+    letter-spacing: 1px;
+    color: #666;
+    overflow: hidden;
+    /* * overflow: hidden; 會把超出去的部分全部隱藏起來 */
+    /* overflow: visible; 預設值，會讓超出去的部分顯示出來 */
+    /* overflow: scroll; 把超出去的部分變成滾動條 */
+    /* overflow: auto; 會自動判斷是否要出現滾動條 */
+    /* overflow-x: hidden; 只隱藏x軸 */
+    /* overflow-y: hidden; 只隱藏y軸 */
+    /* overflow-x: scroll; 只顯示x軸的滾動條 */
+    /* overflow-y: scroll; 只顯示y軸的滾動條 */
+    /* overflow-x: auto; 自動判斷是否要出現x軸的滾動條 */
+    /* overflow-y: auto; 自動判斷是否要出現y軸的滾動條 */
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    /* * box-shadow: x軸  y軸  模糊程度  外擴或內縮的程度 */
+}
+.namecard h2{
+    font-size: 25;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+.namecard h2 span{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.namecard h5{
+    color: #034AA6;
+    font-weight: 500;
+}
+.namecard p{
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 2.5;
+}
+.page_tittle{
+    color: #555;
+    font-weight: 0;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.circle1{
+    position: absolute;
+    right: 100px;
+    background-color: #034AA6;
+}
+.circle2{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    border: 3px solid #034AA6;
+}
+.mark{
+    font-size: 230px;
+    color: rgba(0,0,0,0.05);;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
